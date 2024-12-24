@@ -10,7 +10,8 @@ const  baseQuery = fetchBaseQuery({
             Headers.set('Authorization', `Bearer ${token}`);
         }
         return Headers;
-    }
+    },
+    mode:"cors"
 })
 
 const booksApi = createApi({
